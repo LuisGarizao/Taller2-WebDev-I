@@ -1,0 +1,197 @@
+
+header{
+    background-color: rgb(238, 169, 72);
+    
+}
+
+body{
+    background-color: rgb(217, 224, 180);
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;/*fila o columna*/
+    justify-content: center;
+    align-items: flex-end;
+
+    /* border: 2px solid blue; */
+    flex-wrap: wrap;
+}
+.container div{
+    min-width: 100px;
+}
+.container-card{
+    
+    width: 200px;
+}
+.card{
+    background-color:  rgb(161, 163, 158);
+    max-width: 200px;
+    height: 600px;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 3px;
+    /* -webkit-box-shadow: 40px 18px 16px -7px rgba(0,0,0,0.75); */
+    /* -moz-box-shadow: 40px 18px 16px -7px rgba(0,0,0,0.75); */
+    /* box-shadow: 40px 18px 16px -7px rgba(0,0,0,0.75); */
+}
+img{
+    width: 100%;
+    height: 254px;
+}
+
+.card-header{
+    height: 60px;
+}
+
+.card-titulo,.card-subtitulo{
+    font-size: large;
+    text-align: center;
+
+}
+.card-body{
+    min-height: 250px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-body.button{
+    bottom: 5px;
+    color: aquamarine;
+    /* padding-bottom: 5px; */
+}
+
+
+.navLinks{
+    display: flex;
+    flex-direction: row;/*fila o columna*/
+    height: 30px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: larger;
+}
+
+.links-izq{
+    position: relative;
+    /* left: auto; */
+    justify-self: flex-start;
+
+}
+
+.links-der{
+    position: relative;
+    /* right: auto; */
+    justify-self: flex-end;
+}
+
+/* Estilo del botón */
+.dropbtn {
+    background-color: #3498db;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Contenedor del dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Contenido del dropdown (links) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Estilo de los links dentro del dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Cambia el color al pasar el mouse sobre los links */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Muestra el dropdown al pasar el mouse sobre el botón */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Cambia el color del botón cuando el dropdown está visible */
+.dropdown:hover .dropbtn {
+    background-color: #2980b9;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 480px){
+    .container{
+        display: flex;
+        flex-direction: column;/*fila o columna*/
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid blue; */
+        flex-wrap: wrap;
+    }
+    .container div{
+        min-width: 200px;
+        /* height: 500px; */
+        text-align: center;
+    }
+
+    .card-body{
+        min-height: 200px;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    img{
+        height: 280px;
+    }
+
+    .container-card{
+        width: 300px;
+    }
+
+    .card{
+        max-width: 300px;
+        border: 1px solid black;
+        margin: 10px;
+        padding: 3px;
+    }
+
+    
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .container{
+        display: flex;
+        flex-direction: row;/*fila o columna*/
+        justify-content: center;
+        align-items: flex-start;
+        /* border: 2px solid blue; */
+        flex-wrap: wrap;
+    }
+
+
+}
